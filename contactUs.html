@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" media="all" href="map_style.css" type="text/css">		<!-- The style information of the webpage bis stored here -->
+	<title>Visit Oxfordshire - Contact Us</title>									<!-- The tab title -->
+	<div class="header">															<!-- A header at the top of the webpage with the website title-->
+	  <img src="OxfordshireFlag.png" align="right" width="150" height="100" /img>	<!-- insert an image of the Oxfordshire flag, obtained from: http://www.flaginstitute.org/wp/wp-content/uploads/flags/UK-Oxfordshire.png -->
+	  <h1>Visit Oxfordshire</h1>
+	  <p>Tourist attractions in Oxfordshire.</p>
+	</div>
+	<div class="topnav">															<!-- A navigation bar which links the three webpages together-->
+	  <a href="HomePage.html">Home</a>
+	  <a href="SitesToVisit.html">Sites to Visit</a>
+	  <a href="contactUs.html">Contact Us</a>
+	</div>
+</head>
+
+<body>
+	<p>Spotted an error?</p>
+	<p>Want to recommend another attraction site?</p>
+	<p>Please make sure to fill in a form below to let us know your thoughts!</p>
+	<p>PS. Make sure to include as much information as possible in the comment box.
+	<br>
+
+	<!--The code to create the form was developed using code provided on the following webpage: https://www.w3schools.com/html/html_forms.asp -->
+	<form>
+		<!--Have two boxes to enter the users first name and last name-->
+		<label for="fname">First name:</label><br>
+		<input type="text" id="fname" name="fname"><br>
+		<label for="lname">Last name:</label><br>
+		<input type="text" id="lname" name="lname">
+		<br>
+		<!--Allow the user to choose what type of reponse they want to give: error report, suggest new attraction or other-->
+		<br>
+		<input type="radio" id="error" name="responseType" value="error">
+		<label for="error">Report an error</label><br>
+		<input type="radio" id="newAttraction" name="responeType" value="newAttraction">
+		<label for="newAttraction">Suggest a new attraction</label><br>
+		<input type="radio" id="other" name="responseType" value="other">
+		<label for="other">Other</label>
+		<br>
+		<!--A comments box for users to input more information-->
+		<br>
+		<label for="comment">Comments:</label><br>
+		<input type="text" id="comment" name="comment" max="1000" style="height:200px">
+		<br>
+		<!--Insert a submit button-->
+		<br>
+		<input type="submit" value="Submit">
+	</form>
+	
+	<br>
+	<div class="footer">	<!-- A footer at the bottom of the webpage -->
+		<p> This webpage forms part of Assignment 2 for Web-Based GIS GEOG5012M </p>
+		<p> Created by 201483469</p>
+	</div>
+</body>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>		<!--The Google Maps API-->
+	<script type="text/javascript" src="SitesToVisit_map_setup.js"></script>				<!-- Code to setup the markers and information boxes, and convert the easting and northing co-ordinates into WGS84 latitude and longitude co-ordinates. -->
+	<script type="text/javascript" src="jscoord-1.1.1.js"></script>							<!-- Use this library to convert OS co-ordinates to WGS84 latitude/longitude co-ordinates -->
+	<script type="text/javascript" src="separate_sites.js"></script>						<!-- Use this data set to provide information to create the markers and information boxes -->
+	<link rel="stylesheet" media="all" href="map_style.css" type="text/css">				<!-- The style information of the webpage bis stored here -->
+	<title>Visit Oxfordshire - Site to Visit</title>										<!-- The tab title -->
+	<div class="header">																	<!-- A header at the top of the webpage with the website title-->
+	  <img src="OxfordshireFlag.png" align="right" width="150" height="100" /img>			<!-- insert an image of the Oxfordshire flag, obtained from: http://www.flaginstitute.org/wp/wp-content/uploads/flags/UK-Oxfordshire.png -->
+	  <h1>Visit Oxfordshire</h1>
+	  <p>Tourist attractions in Oxfordshire.</p>
+	</div>
+	<div class="topnav">										<!-- A navigation bar which links the three webpages together-->
+	  <a href="HomePage.html">Home</a>							<!-- Replace # with a URL link -->
+	  <a href="SitesToVisit.html">Sites to Visit</a>
+	  <a href="contactUs.html">Contact Us</a>
+	</div>
+</head>
+
+<body onload= "initialize()">									<!-- When the page has loaded call the function initialize -->
+	<p>See the map box below to see the tourist attractions separated by the type of attraction. Click on the markers to find out information about each tourist attraction type which includes a short description about each site, entry fees, disabled access and a URL link to each organisations web site.</p>
+	<p>Built attractions are shown by blue points:</p>
+	<img src="bullet_blue.png" width="15" height="15" /img>		<!-- insert an image of the blue bullet marker -->
+	<p>Built attractions man-made structures and have public interest.</p>
+	<br>
+	<br>
+	<p>Heritage attractions are shown by orange points:</p>
+	<img src="bullet_orange.png" width="15" height="15" /img>	<!-- insert an image of the orange bullet marker -->
+	<p> Heritage attractions are sites that have cultural significance in the county, which could be for historical or social reasons.</p>
+	<br>
+	<br>
+	<p>Natural attractions are shown by green points:</p>
+	<img src="bullet_green.png" width="15" height="15" /img>	<!-- insert an image of the green bullet marker -->
+	<p>Natural attractions are places which showcase the natural environment in Oxfordshire.</p>
+	
+	<div class="gmap" id="map_canvas" style="height: 80%; width: 55%"></div>			<!-- The size of the map box on the page -->	
+	
+	<div class="footer">										<!-- A footer at the bottom of the webpage -->
+		<p> This webpage forms part of Assignment 2 for Web-Based GIS GEOG5012M </p>
+		<p> Created by 201483469</p>
+	</div>
+</body>

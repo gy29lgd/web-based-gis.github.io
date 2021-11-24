@@ -1,0 +1,58 @@
+/*The CSS style for the three webpages were developed using code from https://www.w3schools.com/css/css_website_layout.asp */
+/*This style sheet controls the style for all three html pages used to create the Visit Oxfordshire website*/
+
+html { 		/* the size of the html portion of the webpage */
+	height: 100%;
+	width: 100%;
+}
+
+head {		/*The style settings fir the head of the html page */
+	height: 100%;
+	width: 100%;
+}
+
+body { 		/* The style settings for the body of the html page, this includes a background colour, and font colour and style */
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255, 0, 0, 0.1);	/* Set the background colour of the webpage to red at an opacity of 0.1 */
+    color: black;
+    font-size: small;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+.header {	/* Give the header a background of red with an opacity of 0.3*/
+	font-size: medium;
+	background-color: rgba(255, 0, 0, 0.3);
+	padding: 20px
+}
+
+/* Style the top navigation bar with the colour red and opacity of 0.3 */
+.topnav {
+  overflow: hidden;
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+
+.gmap {			/* The map will have a solid black border of 5 pixels wide */
+	margin: 5px;
+    border: thin solid black;
+}
+
+.infowindow	{	/* Changes the colour of the pop-up text to black */
+	color: black;
+}
+
+.footer {	/* Give the footer a background of red with an opacity of 0.3*/
+	font-size: small;
+	background-color: rgba(255, 0, 0, 0.3);
+	padding: 20px
+}

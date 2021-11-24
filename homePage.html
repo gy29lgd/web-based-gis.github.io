@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>	<!-- The Google Map API-->
+	<script type="text/javascript" src="home_map_setup.js"></script>					<!-- Code to setup the markers and information boxes, and convert the easting and northing co-ordinates into WGS84 latitude and longitude co-ordinates. -->
+	<script type="text/javascript" src="jscoord-1.1.1.js"></script>						<!-- Use this library to convert OS co-ordinates to WGS84 latitude/longitude co-ordinates -->
+	<script type="text/javascript" src="all_sites.js"></script>							<!-- Use this data set to provide information to create the markers and information boxes -->
+	<link rel="stylesheet" media="all" href="map_style.css" type="text/css">			<!-- The style information of the webpage bis stored here -->
+	<title>Visit Oxfordshire - Home Page</title>										<!-- The tab title -->
+	<div class="header">																<!-- A header at the top of the webpage with the website title-->
+	  <img src="OxfordshireFlag.png" align="right" width="150" height="100" /img>		<!-- insert an image of the Oxfordshire flag, obtained from: http://www.flaginstitute.org/wp/wp-content/uploads/flags/UK-Oxfordshire.png -->
+	  <h1>Visit Oxfordshire</h1>
+	  <p>Tourist attractions in Oxfordshire.</p>
+	</div>
+	<div class="topnav">								<!-- A navigation bar which links the three webpages together-->
+	  <a href="homePage.html">Home</a>					<!-- Replace # with a URL link -->
+	  <a href="SitesToVisit.html">Sites to Visit</a>
+	  <a href="contactUs.html">Contact Us</a>
+	</div>
+</head>
+
+<body onload= "initialize()">							<!-- When the page has loaded call the function initialize -->
+	<p>Visit Oxfordshire is a website developed for both residents and visitors to Oxfordshire.</p>
+	<p>The tourist attractions in Oxfordshire are spilt into three types so you can decide where to visit depending on your intersts.</p>
+	<p>We have spilt the destinations into the following categories:</p>
+	<p>		1. Built attractions </p>
+	<p>		2. Heritage attractions </p>
+	<p>		3. Natural attractions </p>
+	<p> Click on the red markers on the map below to find out a little about the destinations. Then see the 'Sites to Visit' tab to find out more about each site!</p>
+	
+	<div class="gmap" id="map_canvas" style="height: 80%; width: 55%"></div>			<!-- The size of the map box on the page -->	
+	
+	<div class="footer">								<!-- A footer at the bottom of the webpage -->
+		<p> This webpage forms part of Assignment 2 for Web-Based GIS GEOG5012M </p>
+		<p> Created by 201483469</p>
+	</div>
+</body>
